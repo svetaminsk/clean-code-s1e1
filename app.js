@@ -127,7 +127,7 @@ var taskCompleted=function(){
     var listItem=this.parentNode;
     completedTasksHolder.appendChild(listItem);
     bindTaskEvents(listItem, taskIncomplete);
-
+    listItem.className="complete__item task-item";
 }
 
 
@@ -139,6 +139,7 @@ var taskIncomplete=function(){
     var listItem=this.parentNode;
     incompleteTaskHolder.appendChild(listItem);
     bindTaskEvents(listItem,taskCompleted);
+    listItem.className="incomplete__item task-item";
 }
 
 
